@@ -1,0 +1,14 @@
+﻿<!--Connecting the HomeViewModel class-->
+@model HomeViewModel
+
+<h1>High quality work </h1>
+<div class="row mt-5 mb-2">
+    <!--We go through all the services in a loop-->
+    @{
+        foreach (Service service in Model.favServices)
+        {
+            <!--We call an additional template and pass into it the object that needs to be displayed each time-->
+            @Html.Partial("AllServices", service)
+        }
+    }
+</div>

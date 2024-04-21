@@ -1,0 +1,17 @@
+﻿<!--Connecting ShopCartViewModel-->
+@model ShopCartViewModel
+<!--Create an html document-->
+<div class="container mt-5">
+    <!--We go through all the documents in listShopItems-->
+    @foreach (var el in Model.shopCart.listShopItems)
+    {
+        <div class="alert alert-warning mt-3">
+            <!--Displaying the name of the service and its price-->
+            <b>Service:</b> @el.service.name<br />
+            <b>Price:</b> @el.service.price.ToString("c")
+        </div>
+    }
+    <hr />
+    <!--Adding a Confirm and pay button-->
+    <a class="btn btn-danger mb-5" asp-controller="Order" asp-action="Checkout">Confirm and pay</a>
+</div>

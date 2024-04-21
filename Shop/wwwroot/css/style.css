@@ -1,0 +1,11 @@
+﻿body {
+    background: #fcfcfc;
+}
+
+.features-img {
+  height: 5rem;
+}
+.features-img img {
+  display: block;
+  margin: 0 auto;
+}

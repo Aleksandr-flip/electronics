@@ -1,0 +1,10 @@
+﻿@model Service
+<!--Creating service output-->
+<div class="col-lg-4">
+    <img class="img-thumbnail" src="@Model.img" alt="@Model.name" />
+    <h2>@Model.name</h2>
+    <p>@Model.shortDesc</p>
+    <p>Price: @Model.price.ToString("c")</p>
+    <!--Specify the controller, service id function-->
+    <p><a class="btn btn-warning" asp-controller="ShopCart" asp-action="addToCart" asp-route-id="@Model.id">Add to cart</a></p>
+</div>

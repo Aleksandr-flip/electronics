@@ -1,0 +1,49 @@
+﻿<!--Create a view that should be called the Checkout function-->
+<!--Connecting the Order model-->
+@model Order
+
+<h3>Placing an order</h3>
+<div class="row mb-5">
+    <!--Creating forms to receive user data-->
+    <form asp-action="Checkout" method="post" class="form-horizontal">
+        <div class="form-group">
+            <label asp-for="name"></label>
+            <div class="col-md-5">
+                <input asp-for="name" class="form-control" />
+                <span asp-validation-for="name" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="surname"></label>
+            <div class="col-md-5">
+                <input asp-for="surname" class="form-control" />
+                <span asp-validation-for="surname" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="adress"></label>
+            <div class="col-md-5">
+                <input asp-for="adress" class="form-control" />
+                <span asp-validation-for="adress" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="phone"></label>
+            <div class="col-md-5">
+                <input asp-for="phone" class="form-control" />
+                <span asp-validation-for="phone" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="email"></label>
+            <div class="col-md-5">
+                <input asp-for="email" class="form-control" />
+                <span asp-validation-for="email" class="text-danger"></span>
+            </div>
+        </div>
+        <br />
+        <!--When you click on the button to complete the order, we will call the Checkout function-->
+        <input class="btn btn-success" type="submit" value="Complete order" />
+    </form>
+</div>
+

@@ -1,0 +1,12 @@
+﻿<h1>All services</h1>
+    <h3>@Model.currCategory</h3>
+    <div class="row mt-5 mb-2">
+        @{
+            foreach (Service service in Model.allServices)
+            {
+                //We connect the template and pass the service object
+                @Html.Partial("AllServices", service)
+            }
+         }
+    </div>
+    
