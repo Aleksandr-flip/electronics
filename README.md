@@ -1,6 +1,10 @@
 # [Electronics And Testing](https://mjfcs.com/)
-- A small website consists of several pages
+- Online store website
 # Tools used:
-- html
-- css
-- javascript
+- .NET
+- C#
+- ASP.NET CORE MVC
+- MSSQL
+- bootstrap
+- Database
+- Smarterasp.net
